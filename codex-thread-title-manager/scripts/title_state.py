@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -248,17 +249,26 @@ def handle(request: dict[str, Any]) -> dict[str, Any]:
         return response
 
 
+def write_response(value: dict[str, Any]) -> None:
+    encoded = (json.dumps(value, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8")
+    sys.stdout.buffer.write(encoded)
+    sys.stdout.buffer.flush()
+
+
 def main() -> int:
     try:
-        raw = input()
+        raw_bytes = sys.stdin.buffer.readline()
+        if not raw_bytes:
+            raise EOFError
+        raw = raw_bytes.decode("utf-8")
         request = json.loads(raw)
         if not isinstance(request, dict):
             raise StateError("request must be a JSON object")
         response = handle(request)
-        print(json.dumps(response, ensure_ascii=False, sort_keys=True))
+        write_response(response)
         return 0
-    except (EOFError, json.JSONDecodeError, StateError) as exc:
-        print(json.dumps({"ok": False, "error": str(exc)}, ensure_ascii=False, sort_keys=True))
+    except (EOFError, UnicodeDecodeError, json.JSONDecodeError, StateError) as exc:
+        write_response({"ok": False, "error": str(exc)})
         return 2
 
 

@@ -17,6 +17,7 @@ class TitleStateTests(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory()
         self.env = os.environ.copy()
         self.env["CODEX_TITLE_MANAGER_STATE_DIR"] = self.temporary.name
+        self.env["PYTHONIOENCODING"] = "cp1252"
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
