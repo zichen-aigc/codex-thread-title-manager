@@ -1,0 +1,8 @@
+interface:
+  display_name: "Codex 标题管家"
+  short_description: "按真实项目、当前任务和实际结果安全维护 Codex 侧栏标题"
+  default_prompt: "使用 $codex-thread-title-manager 预览并整理 Codex 任务标题。"
+
+policy:
+  allow_implicit_invocation: true
+
