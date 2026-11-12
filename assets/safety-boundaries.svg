@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Safety boundaries for task title maintenance</title>
+  <desc id="desc">The tool protects manual titles, previews batch changes, uses official tools only, and keeps recovery state local.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07162d"/>
+      <stop offset="1" stop-color="#0b1230"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#21dcff"/>
+      <stop offset="1" stop-color="#8b63ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000817" flood-opacity=".5"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="570" rx="28" fill="url(#bg)"/>
+  <text x="60" y="72" fill="#f4f8ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="750">Safety by default</text>
+  <text x="60" y="106" fill="#8fa9c8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Useful automation without taking ownership away from the user.</text>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" filter="url(#shadow)">
+    <g transform="translate(60 150)">
+      <rect width="250" height="286" rx="22" fill="#10223c" stroke="#304967"/>
+      <path d="M125 38l38 14v31c0 33-20 56-38 65-18-9-38-32-38-65V52z" fill="#12364d" stroke="#42def7" stroke-width="3"/>
+      <path d="M106 87l13 13 27-32" fill="none" stroke="#65f1c0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="24" y="182" fill="#f0f7ff" font-size="21" font-weight="700">Manual titles win</text>
+      <text x="24" y="215" fill="#8fa9c8" font-size="15">A user-authored title is</text>
+      <text x="24" y="238" fill="#8fa9c8" font-size="15">authoritative and protected.</text>
+    </g>
+    <g transform="translate(337 150)">
+      <rect width="250" height="286" rx="22" fill="#10223c" stroke="#304967"/>
+      <rect x="86" y="46" width="78" height="88" rx="12" fill="#252e5b" stroke="#a888ff" stroke-width="3"/>
+      <path d="M102 69h46M102 86h46M102 103h30" stroke="#c9b8ff" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="102" cy="121" r="5" fill="#63f1bb"/>
+      <text x="24" y="182" fill="#f0f7ff" font-size="21" font-weight="700">Preview batches</text>
+      <text x="24" y="215" fill="#8fa9c8" font-size="15">Historical changes require</text>
+      <text x="24" y="238" fill="#8fa9c8" font-size="15">the exact mapping first.</text>
+    </g>
+    <g transform="translate(614 150)">
+      <rect width="250" height="286" rx="22" fill="#10223c" stroke="#304967"/>
+      <circle cx="125" cy="89" r="44" fill="#133c4b" stroke="#55ebc5" stroke-width="3"/>
+      <path d="M104 90l14 14 29-34" fill="none" stroke="#72f1c3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="24" y="182" fill="#f0f7ff" font-size="21" font-weight="700">Official tools only</text>
+      <text x="24" y="215" fill="#8fa9c8" font-size="15">No direct edits to databases,</text>
+      <text x="24" y="238" fill="#8fa9c8" font-size="15">rollouts, caches, or app files.</text>
+    </g>
+    <g transform="translate(891 150)">
+      <rect width="250" height="286" rx="22" fill="#10223c" stroke="#304967"/>
+      <rect x="91" y="77" width="68" height="62" rx="12" fill="#2c2856" stroke="#c190ff" stroke-width="3"/>
+      <path d="M105 77V63a20 20 0 0 1 40 0v14" fill="none" stroke="#d5b8ff" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="125" cy="106" r="7" fill="#e8d9ff"/>
+      <path d="M125 112v12" stroke="#e8d9ff" stroke-width="5" stroke-linecap="round"/>
+      <text x="24" y="182" fill="#f0f7ff" font-size="21" font-weight="700">State stays local</text>
+      <text x="24" y="215" fill="#8fa9c8" font-size="15">Recovery history never belongs</text>
+      <text x="24" y="238" fill="#8fa9c8" font-size="15">in the public repository.</text>
+    </g>
+  </g>
+
+  <rect x="60" y="472" width="1080" height="48" rx="24" fill="#102846" stroke="url(#shield)" stroke-opacity=".7"/>
+  <circle cx="92" cy="496" r="8" fill="#63f1bb"/>
+  <text x="115" y="503" fill="#c8d9eb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Stable titles · explicit batch approval · reversible local history · privacy-conscious defaults</text>
+</svg>

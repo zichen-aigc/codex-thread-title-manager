@@ -2,6 +2,10 @@
 
 [English](README.en.md)
 
+<p align="center">
+  <img src="assets/social-preview.jpg" alt="Codex Thread Title Manager：让侧栏标题跟随真实任务" width="100%">
+</p>
+
 让 Codex 侧栏标题跟随**真实项目和当前任务**，而不是长期停留在第一条消息、原始网址或“未说明对象的开场请求”。
 
 ## 它解决什么
@@ -17,6 +21,26 @@
 ## 它不是什么
 
 这不是后台守护进程，也不是定时任务。自动维护由每个 Codex 任务内的 Agent 按全局 `AGENTS.md` 规则调用官方标题工具完成。若客户端没有 `list_threads`、`read_thread` 或 `set_thread_title` 能力，标题管理不会运行。
+
+## 一眼看懂
+
+从难以辨认的开场标题，整理成稳定、可检索的“项目｜真实任务”：
+
+<p align="center">
+  <img src="assets/title-before-after.svg" alt="从模糊标题到项目感知标题的前后对比" width="100%">
+</p>
+
+维护过程只在目标或任务边界真正变化时发生：
+
+<p align="center">
+  <img src="assets/how-it-works.svg" alt="读取上下文、拟定标题、官方改名、记录恢复历史的四步流程" width="100%">
+</p>
+
+用户手动标题优先，批量改名前必须预览，而且不直接修改 Codex 内部存储：
+
+<p align="center">
+  <img src="assets/safety-boundaries.svg" alt="标题管理的隐私与安全边界" width="100%">
+</p>
 
 ## 仓库结构
 

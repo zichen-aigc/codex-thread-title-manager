@@ -2,6 +2,10 @@
 
 [中文](README.md)
 
+<p align="center">
+  <img src="assets/social-preview.jpg" alt="Codex Thread Title Manager keeps sidebar titles aligned with real work" width="100%">
+</p>
+
 Keep Codex sidebar titles aligned with the **real project and current work**, instead of leaving them tied to the first prompt, a raw URL, or an unspecified opening request.
 
 ## What it does
@@ -17,6 +21,26 @@ Keep Codex sidebar titles aligned with the **real project and current work**, in
 ## What it is not
 
 This is not a background daemon or scheduler. Automatic upkeep is performed by the Agent inside each Codex task, following the global `AGENTS.md` policy and calling the official title tool. It does not run on clients that lack `list_threads`, `read_thread`, or `set_thread_title`.
+
+## At a glance
+
+Turn hard-to-recognize opening titles into stable, searchable `Project｜Real task` labels:
+
+<p align="center">
+  <img src="assets/title-before-after.svg" alt="Before and after comparison of vague and project-aware task titles" width="100%">
+</p>
+
+Upkeep runs only when the objective or task boundary changes materially:
+
+<p align="center">
+  <img src="assets/how-it-works.svg" alt="Four-step flow: read context, propose a title, rename with official tools, and record recovery history" width="100%">
+</p>
+
+Manual titles stay authoritative, batch changes are preview-first, and Codex internals are never edited directly:
+
+<p align="center">
+  <img src="assets/safety-boundaries.svg" alt="Privacy and safety boundaries for task title maintenance" width="100%">
+</p>
 
 ## Requirements
 
