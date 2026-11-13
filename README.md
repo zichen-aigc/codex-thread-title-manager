@@ -3,7 +3,7 @@
 [English](README.en.md)
 
 <p align="center">
-  <img src="assets/social-preview.jpg" alt="Codex Thread Title Manager：让侧栏标题跟随真实任务" width="100%">
+  <img src="assets/social-preview.zh-CN.jpg" alt="Codex 任务标题管家：让标题跟随真实任务" width="100%">
 </p>
 
 让 Codex 侧栏标题跟随**真实项目和当前任务**，而不是长期停留在第一条消息、原始网址或“未说明对象的开场请求”。
